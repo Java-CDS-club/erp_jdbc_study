@@ -2,6 +2,8 @@ select user(), database();
 
 
 select title_no, title_name from title where title_no=1;
+SELECT * from department d2;
+select * from employee;
 
 select * 
 from employee e join department d on e.dept = d.dept_no 

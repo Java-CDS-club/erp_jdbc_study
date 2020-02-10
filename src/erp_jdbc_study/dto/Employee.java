@@ -21,8 +21,7 @@ public class Employee {
 		this.empNo = empNo;
 	}
 
-	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept,
-			Date hireDate) {
+	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept, Date hireDate) {
 		this.empNo = empNo;
 		this.empName = empName;
 		this.title = title;
@@ -32,8 +31,7 @@ public class Employee {
 		this.hireDate = hireDate;
 	}
 
-	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept, String passwd, 
-			Date hireDate) {
+	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept, String passwd, Date hireDate) {
 		this.empNo = empNo;
 		this.empName = empName;
 		this.title = title;
