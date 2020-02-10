@@ -9,10 +9,10 @@ public class Employee {
 	private Employee manager;
 	private int salary;
 	private Department dept;
-	private String pass;
+	private String passwd;
 	private byte[] pic;
 	private Date hireDate;
-	
+
 	public Employee() {
 		// TODO Auto-generated constructor stub
 	}
@@ -21,28 +21,26 @@ public class Employee {
 		this.empNo = empNo;
 	}
 
-	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept, String pass,	Date hireDate) {
+	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept,
+			Date hireDate) {
 		this.empNo = empNo;
 		this.empName = empName;
 		this.title = title;
 		this.manager = manager;
 		this.salary = salary;
 		this.dept = dept;
-		this.pass = pass;
 		this.hireDate = hireDate;
 	}
 
-	
-
-	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept, String pass,	Date hireDate, byte[] pic) {
+	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept, String passwd, 
+			Date hireDate) {
 		this.empNo = empNo;
 		this.empName = empName;
 		this.title = title;
 		this.manager = manager;
 		this.salary = salary;
 		this.dept = dept;
-		this.pass = pass;
-		this.pic = pic;
+		this.passwd = passwd;
 		this.hireDate = hireDate;
 	}
 
@@ -94,12 +92,12 @@ public class Employee {
 		this.dept = dept;
 	}
 
-	public String getPass() {
-		return pass;
+	public String getPasswd() {
+		return passwd;
 	}
 
-	public void setPass(String pass) {
-		this.pass = pass;
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
 	}
 
 	public byte[] getPic() {
@@ -117,12 +115,11 @@ public class Employee {
 	public void setHireDate(Date hireDate) {
 		this.hireDate = hireDate;
 	}
- 
+
 	@Override
 	public String toString() {
-		return String.format(
-				"Employee [empNo=%s, empName=%s, title=%s, manager=%s, salary=%s, dept=%s, pass=%s, hireDate=%s, pic=%s]", empNo,
-				empName, title.getTitleNo(), manager.getEmpNo(), salary, dept.getDeptNo(), pass, String.format("%1$tF - %1$tT", hireDate), 
+		return String.format("Employee [%s %s %s %s %s %s %s %s %s]", empNo, empName, title.getTitleNo(),
+				manager.getEmpNo(), salary, dept.getDeptNo(), passwd, String.format("%1$tF - %1$tT", hireDate),
 				pic != null ? pic.length : null);
 	}
 
